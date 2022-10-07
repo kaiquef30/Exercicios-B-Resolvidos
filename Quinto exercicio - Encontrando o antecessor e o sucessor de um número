@@ -1,0 +1,20 @@
+public class quintoExercicio {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		int numRandom = 0;
+		
+		System.out.println("Digite um número que você queira o antecessor e o sucessor");
+		numRandom = lerTeclado.nextInt();
+		
+		int antecessor = numRandom - 1;
+		int sucessor = numRandom + 1;
+		
+		System.out.println("O antecessor do número " + numRandom + " é " + antecessor + " e o sucessor é " + sucessor);
+		
+	}
+	
+
+}
