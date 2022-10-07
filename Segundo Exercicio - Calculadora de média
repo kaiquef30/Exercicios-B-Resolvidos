@@ -1,0 +1,12 @@
+public class segundoExercicio {
+	
+	public static void main(String[] args) {
+		
+		int calculandoMedia = 8 + 7 + 9 / 3;
+		
+		int calculaMediaDaMedia = calculandoMedia / 3;
+		
+		System.out.println("O valor da média é: " + calculandoMedia + " e o valor da média da média é: " + calculaMediaDaMedia);
+	}
+
+}
