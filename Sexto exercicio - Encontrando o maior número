@@ -1,0 +1,28 @@
+public class sextoExercicio {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		
+		int primeiroNumero = 0;
+		int segundoNumero = 0;
+		
+		System.out.println("Digite aqui o primeiro número");
+		primeiroNumero = lerTeclado.nextInt();
+		
+		System.out.println("Digite aqui o segundo número");
+		segundoNumero = lerTeclado.nextInt();
+		
+		if(primeiroNumero > segundoNumero) {
+			
+			System.out.println("O número maior é o " + primeiroNumero);
+		}
+		
+		else {
+			System.out.println("O número maior é o " + segundoNumero);
+		}
+		
+	}
+
+}
