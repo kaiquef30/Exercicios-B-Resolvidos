@@ -1,0 +1,22 @@
+public class terceiroExercicio {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		double saldo = 0;
+		
+		System.out.println("Informe um saldo: ");
+		saldo = lerTeclado.nextDouble();
+		
+		
+		double saldoComReajuste = saldo / 100;
+		double saldoEfetuado = saldoComReajuste + saldo;
+		
+		
+		
+		System.out.println("O saldo informado com um reajuste de 1% é: " + saldoEfetuado);
+		
+	}
+
+}
