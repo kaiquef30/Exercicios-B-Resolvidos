@@ -1,0 +1,23 @@
+public class primeiroExercicio {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		int idadeEmAnos = 0;
+		int idadeEmMeses = 0;
+		
+		
+		
+		System.out.println("Digite aqui quantos anos você tem:");
+		idadeEmAnos = lerTeclado.nextInt();
+		
+		System.out.println("Digite aqui quantos meses você tem: ");
+		idadeEmMeses = lerTeclado.nextInt();
+		
+		System.out.println("Convertendo anos em dias você tem: " + 30 * idadeEmAnos + " dias de vida");
+		System.out.println("Convertendo meses em dias você tem: " + 30 * idadeEmMeses + " dias de vida");
+		
+	}
+
+}
