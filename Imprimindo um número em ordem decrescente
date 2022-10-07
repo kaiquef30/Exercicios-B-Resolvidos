@@ -1,0 +1,21 @@
+public class setimoExercicio {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		int num = 0;
+		
+		System.out.println("Digite aqui o número que você queira imprimir em ordem decrescente: ");
+		num = lerTeclado.nextInt();
+		
+		for(int contador = 0; contador <= num; contador++) {
+			
+			System.out.println(num--);
+			contador--;
+			
+		}
+		
+	}
+
+}
