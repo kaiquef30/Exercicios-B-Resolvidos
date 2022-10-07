@@ -1,0 +1,32 @@
+public class quartoExercicio {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		int quantidadeValorUm = 0;
+		int valorUm = quantidadeValorUm * 300;
+		
+		System.out.println("Digite a quantidade de peças do primeiro produto");
+		valorUm = lerTeclado.nextInt();
+		
+		
+		
+		int quantidadeValorDois = 0;
+		int valorDois = quantidadeValorDois * 800;
+		
+		System.out.println("Digite a quantidade de peças do segundo produto");
+		valorDois = lerTeclado.nextInt();
+		
+		int IPI = 35;
+		
+		
+		double resultadoDoCalculo = (valorUm * valorDois) * (IPI/100+1);
+		
+		
+		System.out.println(resultadoDoCalculo);
+		
+		
+	}
+
+}
