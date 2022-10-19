@@ -1,0 +1,37 @@
+package alura.com.br;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class persistindoAteEncotrarONumero {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		
+		System.out.println("Digite um nome de usuario");
+		String receberNome = lerTeclado.next();
+		
+		System.out.println("Digite uma senha");
+		int receberSenha = lerTeclado.nextInt();
+		
+		for(int i = 0; i <= 100; i++) {
+			
+			System.out.println("Digite a senha para tentar entrar");
+			int compararSenhas = lerTeclado.nextInt();
+
+						
+			if(receberSenha == compararSenhas) {
+
+				System.out.println("Logado com sucesso!");
+				break;
+		}
+			else {
+				
+				System.out.println("Senha inválida! Tente novamente");
+				
+				}
+			}
+	}
+
+}
