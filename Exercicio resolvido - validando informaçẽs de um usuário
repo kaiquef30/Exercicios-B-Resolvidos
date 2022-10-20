@@ -1,0 +1,79 @@
+package alura.com.br;
+import java.util.Scanner;
+
+public class persistindoAteEncotrarONumero {
+	
+	public static void main(String[] args) {
+		
+		Scanner lerTeclado = new Scanner(System.in);
+		
+		String nome = "";
+		int idade = 0;
+		double salario = 0;
+		String sexo = "m, f";
+		int estadoCivil = 0;
+		
+		
+		for(int i = 0; i < 10; i++) {
+		
+		System.out.println("Digite aqui o seu nome");
+		nome = lerTeclado.next();
+		
+		if(nome.length() < 3) {
+			
+			System.out.println("Seu nome precisa ter mais de 3 caracteres para ser valido");
+			
+			break;
+		}
+		
+		else {
+			
+			System.out.println("Digite aqui a sua idade");
+			idade = lerTeclado.nextInt();
+			
+		}
+		
+		if (idade > 150) {
+			
+			System.out.println("Digite uma idade válida");
+		
+			break;
+		}
+		
+		else {
+			
+			System.out.println("Digite aqui o seu sálario");
+			salario = lerTeclado.nextDouble();
+			
+		}
+		
+		if(salario <= 0) {
+			
+			System.out.println("Digite um sálario válido");
+			
+			break;
+		}
+		
+		System.out.println("Digite aqui o seu genero (f - Feminino) e (m - Masculino)");
+		sexo = lerTeclado.next();
+		
+		if(sexo == sexo) {
+			
+			System.out.println("Digite agora o seu estado civil (1 - solteiro), (2 - casado), (3 - viuvo), (4- divorciado)");
+			estadoCivil = lerTeclado.nextInt();
+			
+			break;
+		}
+		
+		else if (sexo != sexo) {
+			
+			System.out.println("Sexo inválido!");
+			
+			break;
+			
+		}
+		
+		}
+	}
+
+}
